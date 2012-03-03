@@ -1,0 +1,8 @@
+default{
+    state_entry(){
+        llSetScale(<0.036, 1.2, 0.36>);
+        list params = [PRIM_TYPE, PRIM_TYPE_PRISM, 3, <0.2, 0.8, 0.0>, 0.68, <0.0, 0.0, 0.0>, <1.0, 1.0, 0.0>, <0.0, 0.0, 0.0>];
+        llSetPrimitiveParams(params);
+        llSetRot(llEuler2Rot(<PI, 0, PI>));
+    }
+}
