@@ -118,7 +118,8 @@ default
     }
     
     state_entry()
-    {
+{
+	llVolumeDetect(TRUE);
         //llSetTexture(llGetObjectDesc(),ALL_SIDES);
         rbDiapo(llGetObjectDesc(),0.5,0.5);
         string TOUCH = "OFF";
