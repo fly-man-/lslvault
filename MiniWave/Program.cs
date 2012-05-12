@@ -20,8 +20,8 @@ class Program
     static Skype skype;
     static IChat chat;
     static Dictionary<String, String> waves = new Dictionary<String, String>();
-    // static string chatname = "#zogia.zabelin/$66f16fef24c21c1";
-    static string chatname = "#pyramidosita/$salahzar.stenvaag;f271358ebb66aa91";
+     static string chatname = "#zogia.zabelin/$66f16fef24c21c1";
+    //static string chatname = "#pyramidosita/$salahzar.stenvaag;f271358ebb66aa91";
     static void Main(string[] args)
     {
         //rootDirectory = args[0]; 
