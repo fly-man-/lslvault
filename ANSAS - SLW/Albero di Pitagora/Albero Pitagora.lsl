@@ -1,3 +1,5 @@
+// based on Opensource script written by Marcus73 Core 2011
+// modified by Salahzar Stenvaag to be vertical
 vector actual_size;
 integer canale=10;
 integer listen_handler;
@@ -25,14 +27,14 @@ rezzer()
 	float r=llSqrt((actual_size.x/2)*(actual_size.x/2)+(actual_size.x)*(actual_size.x));
 
 	// partiamo da una rotazione di 116? lungo l'asse z
-	float angle=(-116-90+actual_rot_v.x)*DEG_TO_RAD;
+	float angle=(-116-90+180+actual_rot_v.x)*DEG_TO_RAD;
 	float xr=actual_pos.x;
 	float yr=actual_pos.y+r*llSin(angle);
 	float zr=actual_pos.z+r*llCos(angle);
 
 	llRezObject("Object",<xr,yr,zr>,ZERO_VECTOR,rot_new1*actual_rot,0);
 
-	angle=(-64-90+actual_rot_v.x)*DEG_TO_RAD;
+	angle=(-64-90+180+actual_rot_v.x)*DEG_TO_RAD;
 	xr=actual_pos.x;
 	yr=actual_pos.y+r*llSin(angle);
 	zr=actual_pos.z+r*llCos(angle);
