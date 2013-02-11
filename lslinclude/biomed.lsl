@@ -54,3 +54,4 @@ info(string str)
     llMessageLinked(LINK_SET,REQUEST_CHANNEL,"0|LOG|"+session+"|"+tstamp()+"|"+msg,"");
 }
 
+
