@@ -33,3 +33,11 @@ string StringReplace(integer pos, string source, string old, string new)
     return pre + str;
 }
 
+integer startswith(string haystack, string needle) // http://wiki.secondlife.com/wiki/llSubStringIndex
+{
+    return llDeleteSubString(haystack, llStringLength(needle), -1) == needle;
+}
+
+
+
+

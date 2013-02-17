@@ -13,6 +13,26 @@ string  myIV    = "89ABCDEF0123456789ABCDEF01234567";
 #define DATABASE_CHANNEL 204 // for accessing database functionalities
 #define AES_HELPER_CHANNEL 999 // crypting services
 
+// states of HUD400 
+#define STATUS_GETSL "getsl" // getting shopping list
+#define STATUS_READY "ready" // next action BEGIN to get Shopping List
+#define STATUS_OFF "off" // when checkout has been done HUDs stops working
+
+
+#define STATUS_WAITCOUNT "waitcount" // waiting for count (when checkout has been asked)
+#define STATUS_ASKQUIT "askquit" // asking confirmation for Checkout (ok to quit?)
+#define STATUS_LOOKSKU "lookforsku" // looking for sku on database
+#define STATUS_ASKING "asking" // an item has been clicked what to do? TAKE/DROP
+#define STATUS_SENDEND "sendend" // sent end to TRANSMITTER
+#define STATUS_WAITINGCART "waitingcart" // waiting cart for TAKE/DROP
+#define STATUS_RUNNING "running" // running state after BEGIN
+
+// commands exchanged
+#define CMD_SENTCOUNT "sentcount"
+#define CMD_SENTCART "sentcart"
+
+
+
 string STORE="1";
 #define INITDEBUG DEBUG=(integer)parseParams(3); STORE=parseParams(0);
 
