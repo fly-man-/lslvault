@@ -37,7 +37,7 @@ integer startswith(string haystack, string needle) // http://wiki.secondlife.com
 {
     return llDeleteSubString(haystack, llStringLength(needle), -1) == needle;
 }
-
-#define ISNOTOWNER(id) L2K(llGetObjectDetails(id,[ OBJECT_OWNER ]),0) != llGetOwner()
+#define OBJOWNER L2K(llGetObjectDetails(id,[ OBJECT_OWNER ]),0)
+#define ISNOTOWNER(id) OBJOWNER != llGetOwner()
 
 
