@@ -1,0 +1,1 @@
+Needed a way to persist my scripts on 2ndlife and also allow other people to make use of them.
